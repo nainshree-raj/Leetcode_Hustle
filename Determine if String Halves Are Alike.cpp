@@ -25,19 +25,19 @@ public:
         {
             if(m1.find(fhalf[i])!=m1.end())
             {
-                cnt1++;
+               cnt1++;
             }
         }
         for(int i=0;i<sechalf.size();i++)
         {
             if(m1.find(sechalf[i])!=m1.end())
             {
-                cnt2++;
+               cnt2++;
             }
         }
         if(cnt1==cnt2)
         {
-            flag=true;
+           flag=true;
         }
         return flag;
     }
