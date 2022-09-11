@@ -16,4 +16,35 @@ Explanation:
 62 + 82 = 100
 12 + 02 + 02 = 1
 
-  
+SOLUTION :
+class Solution {
+public:
+    bool isHappy(int n) {
+        int sum=0;
+        unordered_set<int>st;
+        
+        if(n==1)return true;
+        while(n)
+        {
+           
+            sum=0;
+            while(n>0)
+            {
+                int last=n%10;
+                sum+=(last*last);
+                n=n/10;
+            }
+            if(sum==1)
+            {
+                return true;
+            }
+            else if(st.find(sum)!=st.end())
+            {
+                return false;
+            }
+            st.insert(sum);
+            n=sum; 
+        }
+        return false;
+    }
+};
