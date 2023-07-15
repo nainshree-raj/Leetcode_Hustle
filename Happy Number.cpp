@@ -17,9 +17,11 @@ Explanation:
 12 + 02 + 02 = 1
 
 SOLUTION :
-class Solution {
+class Solution 
+{
 public:
-    bool isHappy(int n) {
+    bool isHappy(int n) 
+    {
         int sum=0;
         unordered_set<int>st;
         
