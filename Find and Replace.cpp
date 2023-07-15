@@ -10,7 +10,8 @@ Explanation: "mee" matches the pattern because there is a permutation {a -> m, b
 "ccc" does not match the pattern because {a -> c, b -> c, ...} is not a permutation, since a and b map to the same letter.
 
 SOLUTION :
-class Solution {
+class Solution 
+{
 public:
     vector<int> getpattern(string word)
     {
@@ -32,7 +33,8 @@ public:
         }
         return ans;
     }
-    vector<string> findAndReplacePattern(vector<string>& words, string pattern) {
+    vector<string> findAndReplacePattern(vector<string>& words, string pattern) 
+{
         vector<string>res;
         for(int i=0;i<words.size();i++)
         {
